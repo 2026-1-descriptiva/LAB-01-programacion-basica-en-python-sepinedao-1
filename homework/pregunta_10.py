@@ -9,7 +9,7 @@ utilizar pandas, numpy o scipy.
 def pregunta_10():
 
     resultado = []
-    with open ('files\input\data.csv' , 'r') as file:
+    with open ('files/input/data.csv' , 'r') as file:
         for line in file:
             columnas = line.strip().split('\t')
             clave = columnas[0]
