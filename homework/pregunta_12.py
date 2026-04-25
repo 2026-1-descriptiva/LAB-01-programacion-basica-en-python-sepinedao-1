@@ -19,7 +19,7 @@ def pregunta_12():
                 resultado[clave] += valor
             else:
                 resultado[clave] = valor
-    return sorted(resultado.items())
+    return dict(sorted(resultado.items()))
 
     """
     Genere un diccionario que contengan como clave la columna 1 y como valor

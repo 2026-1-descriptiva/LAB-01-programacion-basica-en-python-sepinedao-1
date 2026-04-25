@@ -15,8 +15,8 @@ def pregunta_08():
        
         for line in file:
             columnas = line.strip().split('\t')
-            clave = columnas[1]
-            letra = list(columnas[0])
+            clave = int(columnas[1])
+            letra = columnas[0]
 
             if clave not in acumulado:
                 acumulado[clave]= []
