@@ -9,7 +9,7 @@ utilizar pandas, numpy o scipy.
 def pregunta_08():
 
 
-    with open ('files\input\data.csv', 'r') as file:
+    with open ('files/input/data.csv', 'r') as file:
         acumulado = {}
         resultado = []
        
