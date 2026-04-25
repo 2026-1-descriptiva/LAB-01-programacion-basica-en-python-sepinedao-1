@@ -7,6 +7,29 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_08():
+
+
+    with open ('files\input\data.csv', 'r') as file:
+        acumulado = {}
+        resultado = []
+       
+        for line in file:
+            columnas = line.strip().split('\t')
+            clave = columnas[1]
+            letra = list(columnas[0])
+
+            if clave not in acumulado:
+                acumulado[clave]= []
+            
+            if letra not in acumulado[clave]:
+                acumulado[clave].append(letra)
+        
+        for clave in acumulado.keys():
+            resultado.append((clave, sorted(acumulado[clave])))
+        
+        return sorted(resultado)
+            
+  
     """
     Genere una lista de tuplas, donde el primer elemento de cada tupla
     contiene  el valor de la segunda columna; la segunda parte de la tupla
@@ -27,3 +50,5 @@ def pregunta_08():
      (9, ['A', 'B', 'C', 'E'])]
 
     """
+
+print(pregunta_08())

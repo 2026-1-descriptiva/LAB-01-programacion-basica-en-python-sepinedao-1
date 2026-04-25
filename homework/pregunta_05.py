@@ -24,7 +24,8 @@ def pregunta_05():
                             resultado[i] = (clave, t[1], valor)
             else:
                 resultado.append((clave, valor, valor))
-        return sorted(resultado)
+    
+    return sorted(resultado)
         
 
 

@@ -7,6 +7,25 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_07():
+
+    with open ('files\input\data.csv', 'r') as file:
+        acumulado = {}
+        resultado = []
+       
+        for line in file:
+            columnas = line.strip().split('\t')
+            clave = columnas[1]
+            letra = list(columnas[0])
+            if clave not in acumulado:
+                acumulado[clave] = []
+            acumulado[clave].append(letra)
+
+        for clave in acumulado.keys():
+            resultado.append((clave, sorted(acumulado[clave])))
+        
+        return sorted(resultado)
+
+
     """
     Retorne una lista de tuplas que asocien las columnas 0 y 1. Cada tupla
     contiene un valor posible de la columna 2 y una lista con todas las letras
@@ -25,3 +44,6 @@ def pregunta_07():
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
 
     """
+
+
+print(pregunta_07())
