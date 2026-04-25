@@ -11,7 +11,7 @@ def pregunta_01():
     with open ('files\input\data.csv', 'r') as file:
         for line in file:
             columna = line.strip().split('\t')
-            valor = float(columna[1])
+            valor = int(columna[1])
             resultado += valor
     return resultado
     """
