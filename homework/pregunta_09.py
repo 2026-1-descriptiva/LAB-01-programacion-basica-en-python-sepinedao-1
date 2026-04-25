@@ -22,6 +22,7 @@ def pregunta_09():
             
            
         return dict(sorted(resultado.items()))
+    
     """
     Retorne un diccionario que contenga la cantidad de registros en que
     aparece cada clave de la columna 5.

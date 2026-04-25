@@ -20,8 +20,6 @@ def pregunta_10():
             resultado.append((clave, valor1, valor2))
         return resultado
 
-
-
     """
     Retorne una lista de tuplas contengan por cada tupla, la letra de la
     columna 1 y la cantidad de elementos de las columnas 4 y 5.

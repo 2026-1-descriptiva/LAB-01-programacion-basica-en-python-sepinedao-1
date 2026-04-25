@@ -50,5 +50,4 @@ def pregunta_08():
      (9, ['A', 'B', 'C', 'E'])]
 
     """
-
 print(pregunta_08())

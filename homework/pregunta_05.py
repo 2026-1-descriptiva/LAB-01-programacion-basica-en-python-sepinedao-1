@@ -27,9 +27,6 @@ def pregunta_05():
     
     return sorted(resultado)
         
-
-
-
     """
     Retorne una lista de tuplas con el valor maximo y minimo de la columna 2
     por cada letra de la columa 1.

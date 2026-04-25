@@ -45,5 +45,4 @@ def pregunta_07():
 
     """
 
-
 print(pregunta_07())

@@ -35,7 +35,6 @@ def pregunta_06():
 
     return sorted(resultado)
     
-
     """
     La columna 5 codifica un diccionario donde cada cadena de tres letras
     corresponde a una clave y el valor despues del caracter `:` corresponde al

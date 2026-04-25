@@ -14,7 +14,6 @@ def pregunta_01():
             valor = float(columna[1])
             resultado += valor
     return resultado
-
     """
     Retorne la suma de la segunda columna.
     

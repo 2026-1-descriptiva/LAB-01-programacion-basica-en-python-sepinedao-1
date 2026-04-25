@@ -26,7 +26,6 @@ def pregunta_04():
                  resultado.append((key, value))
         return resultado
         
-
     """
     La columna 3 contiene una fecha en formato `YYYY-MM-DD`. Retorne la
     cantidad de registros por cada mes, tal como se muestra a continuación.
