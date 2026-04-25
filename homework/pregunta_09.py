@@ -7,6 +7,21 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_09():
+
+    resultado = {}
+    with open ('files\input\data.csv' , 'r') as file:
+        for line in file:
+            columnas = line.strip().split('\t')
+            linea = columnas[4].split(',')
+            for l in linea:
+                clave = l.split(':')[0]
+                if clave in resultado:
+                    resultado[clave] +=1
+                else:
+                    resultado[clave] = 1
+            
+           
+        return dict(sorted(resultado.items()))
     """
     Retorne un diccionario que contenga la cantidad de registros en que
     aparece cada clave de la columna 5.
@@ -24,3 +39,4 @@ def pregunta_09():
      'jjj': 18}}
 
     """
+print(pregunta_09())
