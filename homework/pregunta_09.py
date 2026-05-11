@@ -10,8 +10,8 @@ def pregunta_09():
 
     resultado = {}
     with open ('files/input/data.csv' , 'r') as file:
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             linea = columnas[4].split(',')
             for l in linea:
                 clave = l.split(':')[0]

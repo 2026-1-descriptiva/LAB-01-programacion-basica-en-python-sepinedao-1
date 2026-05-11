@@ -9,8 +9,8 @@ def pregunta_11():
 
     resultado = {}
     with open ('files/input/data.csv', 'r') as file:
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             valor = int(columnas[1])
             letras = columnas[3]
             letra = letras.split(',')

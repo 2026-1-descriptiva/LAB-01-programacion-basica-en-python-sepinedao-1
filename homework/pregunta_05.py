@@ -11,8 +11,8 @@ def pregunta_05():
     resultado = []
 
     with open ('files/input/data.csv', 'r') as file:
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             clave = columnas[0]
             valor = int(columnas[1])
             if clave in [t[0] for t in resultado]:

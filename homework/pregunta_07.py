@@ -12,8 +12,8 @@ def pregunta_07():
         acumulado = {}
         resultado = []
        
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             clave = int(columnas[1])
             letra = columnas[0]
             if clave not in acumulado:
@@ -21,7 +21,7 @@ def pregunta_07():
             acumulado[clave].append(letra)
 
         for clave in acumulado.keys():
-            resultado.append((clave, (acumulado[clave])))
+            resultado.append((clave, acumulado[clave]))
         
         return sorted(resultado)
 

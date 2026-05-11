@@ -9,8 +9,8 @@ utilizar pandas, numpy o scipy.
 def pregunta_01():
     resultado = 0
     with open ('files/input/data.csv', 'r') as file:
-        for line in file:
-            columna = line.strip().split('\t')
+        for linea in file:
+            columna = linea.strip().split('\t')
             valor = int(columna[1])
             resultado += valor
     return resultado

@@ -9,11 +9,11 @@ def pregunta_12():
 
     resultado = {}
     with open('files/input/data.csv', 'r') as file:
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             clave = columnas[0]
             pares = columnas[4].split(',')
-            valor = sum(int(pair.split(':')[1]) for pair in pares) 
+            valor = sum(int(par.split(':')[1]) for par in pares) 
             if clave in resultado:
                 resultado[clave] += valor
             else:

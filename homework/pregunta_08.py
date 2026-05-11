@@ -13,8 +13,8 @@ def pregunta_08():
         acumulado = {}
         resultado = []
        
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             clave = int(columnas[1])
             letra = columnas[0]
 

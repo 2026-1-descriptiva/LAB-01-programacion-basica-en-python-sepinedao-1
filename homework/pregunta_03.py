@@ -10,18 +10,19 @@ def pregunta_03():
     parejas = []
     resultado = []
     with open ('files/input/data.csv', 'r') as file:
-        for line in file:
-            columnas = line.strip().split('\t')
+        for linea in file:
+            columnas = linea.strip().split('\t')
             letras = columnas[0]
             valor = int(columnas[1])
-            parejas.extend((letra, valor) for letra in letras)
+            for letra in letras:
+                parejas.append((letra, valor))
             parejas = sorted(parejas)
 
-        for key, value in parejas:
-                if resultado and resultado[-1][0] == key:
-                 resultado[-1] = (key, resultado[-1][1] + value)
+        for clave, valor in parejas:
+                if resultado and resultado[-1][0] == clave:
+                 resultado[-1] = (clave, resultado[-1][1] + valor)
                 else:
-                 resultado.append((key, value))
+                 resultado.append((clave, valor))
         return resultado
     
     """
